@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Galactic Traveler</title>
+  <link href="https://fonts.cdnfonts.com/css/necosmic-2" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/venera" rel="stylesheet">
+  <style>
+    /* Original styling for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(0, 0, 0); /* Changed to black */
+      padding: 10px 20px;
+    }
+    .logo {
+      font-size: 250px; /* Adjust the size as necessary */
+      color: #ffffff;
+      font-weight: bold;
+      text-align: left;
+      width: 350px; /* Adjust the width for the logo */
+      height: auto;
+    }
+    .menu-bar {
+      display: flex;
+      justify-content: center; /* Centering the menu bar */
+      font-size: 22px;
+      list-style-type: none;
+      font-family: 'Necosmic', sans-serif; /* Apply the new font */
+    }
+    .menu-bar li {
+      margin-right: 20px;
+    }
+    .menu-bar li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .search-bar {
+      text-align: right;
+    }
+    .card-button {
+      float: right;
+      margin-right: 10px;
+    }
+
+    /* Styling for slider with animation */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      overflow: hidden;
+      background-color: #000000;
+    }
+    .slider img {
+      width: 100%;
+      height: 800px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slider img.active {
+      opacity: 1; /* Show the active image */
+    }
+    .slider .shop-now {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Necosmic', sans-serif;
+      padding: 20px 40px;
+      background-color: #0044ff;
+      color: #000;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    /* Featured Products Title Styling */
+    .featured-title {
+      text-align: center;
+      color: #000000;
+      font-family: 'Necosmic', sans-serif; /* Cosmic font */
+      font-size: 36px; /* Adjust the size as necessary */
+      margin: 0px 0;
+      padding: 40px;
+      background-color: rgb(0, 119, 255);
+    }
+
+    /* Product container fix */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 50px;
+      padding: 100px;
+      background-color: rgb(0, 119, 255); /* Background color for featured products section */
+    }
+    .product-card {
+      background-color: rgba(0, 205, 241, 0.637);
+      padding: 50px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      font-family: 'Venera', sans-serif;
+      font-size: 20px;
+      color: #333;
+    }
+    .product-card p {
+      font-family: 'Venera', sans-serif;
+      font-size: 25px;
+      color: #000000;
+    }
+
+    /* Buttons for Add to Cart and Buy Now */
+    .btn-container {
+      margin-top: 15px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .add-to-cart {
+      background-color: #00aeff;
+      color: white;
+    }
+    .buy-now {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: rgb(0, 0, 0);
+      color: #ffffff;
+      text-align: center;
+      padding: 50px; /* Adjust padding if necessary */
+      margin: 0; /* Remove any margin */
+      position: relative;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <img src="https://i.ibb.co/q7B1YYm/Screenshot-2024-10-11-174609-removebg-preview.png" alt="Galactic Traveler Logo" class="logo"> <!-- Added logo here -->
+  <ul class="menu-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="galax-kits.html">Galax-kits</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <button class="card-button">Cart</button>
+  </div>
+</header>
+
+<!-- New Slider Section -->
+<section class="slider">
+  <img src="https://i.ibb.co/MSCzzNP/Leonardo-Phoenix-A-mesmerizing-dark-space-background-featuring-3.png" alt="Slider Image 1" class="active">
+  <img src="https://i.ibb.co/6tHRMm9/Leonardo-Phoenix-A-mesmerizing-dark-space-background-featuring-0-2.png" alt="Slider Image 2">
+  <img src="https://i.ibb.co/9sdYbr0/Leonardo-Phoenix-A-mesmerizing-dark-space-background-featuring-2-1.png" alt="Slider Image 3">
+  <a href="#" class="shop-now">Shop Now</a>
+</section>
+
+<!-- Featured Products Title -->
+<h2 class="featured-title">FEATURED PRODUCTS</h2>
+
+<!-- Featured Products Section -->
+<section class="products">
+  <div class="product-card">
+    <img src="https://i.ibb.co/vD0j5nm/Leonardo-Phoenix-Create-an-ethereal-image-of-a-futuristic-Moon-2.jpg" alt="Moondust Jar">
+    <h3>Moondust Jar</h3>
+    <p>Price: $29.99</p>
+    <div class="btn-container">
+      <button class="btn add-to-cart">Add to Cart</button>
+      <button class="btn buy-now">Buy Now</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="https://i.ibb.co/0KBf51C/Leonardo-Phoenix-Design-an-image-featuring-a-sleek-Galaxy-Ligh-0.jpg" alt="Galaxy Light Projector">
+    <h3>Galaxy Light Projector</h3>
+    <p>Price: $49.99</p>
+    <div class="btn-container">
+      <button class="btn add-to-cart">Add to Cart</button>
+      <button class="btn buy-now">Buy Now</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="https://i.ibb.co/jLttYPW/Leonardo-Phoenix-Visualize-a-Cosmic-Puzzle-that-consists-of-in-3.jpg" alt="Cosmic Puzzle">
+    <h3>Cosmic Puzzle</h3>
+    <p>Price: $24.99</p>
+    <div class="btn-container">
+      <button class="btn add-to-cart">Add to Cart</button>
+      <button class="btn buy-now">Buy Now</button>
+    </div>
+  </div>
+  <div class="product-card">
+    <img src="https://i.ibb.co/s6KzNqK/Leonardo-Phoenix-Illustrate-an-Astronaut-Figurine-floating-in-2.jpg" alt="Astronaut Figurine">
+    <h3>Astronaut Figurine</h3>
+    <p>Price: $19.99</p>
+    <div class="btn-container">
+      <button class="btn add-to-cart">Add to Cart</button>
+      <button class="btn buy-now">Buy Now</button>
+    </div>
+  </div>
+    <div class="product-card">
+        <img src="https://i.ibb.co/t2QnrQQ/Leonardo-Phoenix-Showcase-a-Star-Map-Blanket-unfurled-in-space-3.jpg" alt="Star Map Blanket">
+        <h3>Star Map Blanket</h3>
+        <p>Price: $39.99</p>
+        <div class="btn-container">
+            <button class="btn add-to-cart">Add to Cart</button>
+            <button class="btn buy-now">Buy Now</button>
+      </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2024 The Galactic Traveler. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // JavaScript for slider functionality
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.slider img');
+  const totalImages = images.length;
+
+  function showNextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % totalImages;
+    images[currentIndex].classList.add('active');
+  }
+
+  setInterval(showNextImage, 3000); // Slide every 3 seconds
+</script>
+
+</body>
+</html>

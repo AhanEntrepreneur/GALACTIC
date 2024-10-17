@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galactic Products</title>
+  <link href="https://fonts.cdnfonts.com/css/necosmic-2" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/venera" rel="stylesheet">
+  <style>
+    /* General styling for header, similar to 'A' */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(0, 0, 0);
+      padding: 10px 20px;
+    }
+  
+    /* Products title */
+    .products-title {
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Necosmic', sans-serif;
+      font-size: 48px;
+      margin: 40px 0;
+      background-color: rgb(0, 119, 255);
+      padding: 20px;
+    }
+  
+    /* Container for products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+      gap: 30px; /* Gap between products */
+      padding: 50px;
+      background-color: rgb(0, 119, 255);
+    }
+  
+    /* Each product card */
+    .product-card {
+      background-color: rgba(0, 205, 241, 0.637);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+  
+    /* Product image */
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  
+    /* Product title */
+    .product-card h3 {
+      font-family: 'Venera', sans-serif;
+      font-size: 20px;
+      color: #333;
+    }
+  
+    /* Product description */
+    .product-card p {
+      font-family: 'Venera', sans-serif;
+      font-size: 16px;
+      color: #000;
+    }
+  
+    /* Product buttons */
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  
+    .product-card button:hover {
+      background-color: #0055cc;
+    }
+  
+    /* Footer styling */
+    .footer {
+      background-color: rgb(0, 0, 0);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <img src="https://i.ibb.co/q7B1YYm/Screenshot-2024-10-11-174609-removebg-preview.png" alt="Galactic Traveler Logo" class="logo">
+  <ul class="menu-bar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="galax-kits.html">Galax-kits</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search">
+    <button class="cart-button">Cart</button>
+  </div>
+</header>
+
+<!-- Products Title -->
+<h1 class="products-title">Our Galactic Products</h1>
+
+<!-- Products Grid Section -->
+<section class="products">
+  <!-- Loop for all 50 Products from 'P' -->
+  <!-- Product 1 -->
+<div class="product-item">
+  <img src="images/moondust-jar.jpg" alt="Moondust Jar">
+  <h3>Moondust Jar</h3>
+  <p>A jar filled with cosmic moondust, perfect for decoration or as a unique gift.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product-item">
+  <img src="images/galaxy-light-projector.jpg" alt="Galaxy Light Projector">
+  <h3>Galaxy Light Projector</h3>
+  <p>A projector that fills your room with a stunning galaxy display.</p>
+  <p class="price">$49.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 3 -->
+<div class="product-item">
+  <img src="images/cosmic-puzzle.jpg" alt="Cosmic Puzzle">
+  <h3>Cosmic Puzzle</h3>
+  <p>A 1000-piece puzzle featuring a beautiful cosmic scene.</p>
+  <p class="price">$24.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 4 -->
+<div class="product-item">
+  <img src="images/astronaut-figurine.jpg" alt="Astronaut Figurine">
+  <h3>Astronaut Figurine</h3>
+  <p>A detailed astronaut figurine, perfect for collectors.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 5 -->
+<div class="product-item">
+  <img src="images/star-map-blanket.jpg" alt="Star Map Blanket">
+  <h3>Star Map Blanket</h3>
+  <p>A cozy blanket printed with a map of the stars.</p>
+  <p class="price">$39.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 6 -->
+<div class="product-item">
+  <img src="images/meteor-shower-lamp.jpg" alt="Meteor Shower Lamp">
+  <h3>Meteor Shower Lamp</h3>
+  <p>A lamp that projects a stunning meteor shower onto your walls.</p>
+  <p class="price">$39.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 7 -->
+<div class="product-item">
+  <img src="images/space-themed-puzzle.jpg" alt="Space-Themed Puzzle">
+  <h3>Space-Themed Puzzle</h3>
+  <p>1000-piece puzzle featuring a breathtaking view of the universe.</p>
+  <p class="price">$24.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 8 -->
+<div class="product-item">
+  <img src="images/rocket-ship-night-light.jpg" alt="Rocket Ship Night Light">
+  <h3>Rocket Ship Night Light</h3>
+  <p>A night light in the shape of a rocket ship to guide you to sleep.</p>
+  <p class="price">$17.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 9 -->
+<div class="product-item">
+  <img src="images/galactic-bath-bombs.jpg" alt="Galactic Bath Bombs">
+  <h3>Galactic Bath Bombs</h3>
+  <p>Bath bombs that fizz and sparkle like stars in the water.</p>
+  <p class="price">$12.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 10 -->
+<div class="product-item">
+  <img src="images/planets-jigsaw-puzzle.jpg" alt="Planets Jigsaw Puzzle">
+  <h3>Planets Jigsaw Puzzle</h3>
+  <p>A fun jigsaw puzzle featuring all the planets in our solar system.</p>
+  <p class="price">$22.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 11 -->
+<div class="product-item">
+  <img src="images/meteorite-fridge-magnet.jpg" alt="Meteorite Fridge Magnet">
+  <h3>Meteorite Fridge Magnet</h3>
+  <p>A magnet that looks like a piece of a real meteorite.</p>
+  <p class="price">$9.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 12 -->
+<div class="product-item">
+  <img src="images/space-explorers-journal.jpg" alt="Space Explorer's Journal">
+  <h3>Space Explorer's Journal</h3>
+  <p>A journal designed for aspiring space explorers to jot down their adventures.</p>
+  <p class="price">$15.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 13 -->
+<div class="product-item">
+  <img src="images/galaxy-bathrobe.jpg" alt="Galaxy Bathrobe">
+  <h3>Galaxy Bathrobe</h3>
+  <p>A cozy bathrobe covered in a vibrant galaxy print.</p>
+  <p class="price">$34.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 14 -->
+<div class="product-item">
+  <img src="images/astrological-coaster-set.jpg" alt="Astrological Coaster Set">
+  <h3>Astrological Coaster Set</h3>
+  <p>Coasters featuring astrological signs and their meanings.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 15 -->
+<div class="product-item">
+  <img src="images/starry-night-sky-projector.jpg" alt="Starry Night Sky Projector">
+  <h3>Starry Night Sky Projector</h3>
+  <p>A projector that turns your room into a starry night sky.</p>
+  <p class="price">$54.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 16 -->
+<div class="product-item">
+  <img src="images/space-invaders-socks.jpg" alt="Space Invaders Socks">
+  <h3>Space Invaders Socks</h3>
+  <p>Funky socks designed with space invaders.</p>
+  <p class="price">$8.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 17 -->
+<div class="product-item">
+  <img src="images/astro-gnome-garden-decor.jpg" alt="Astro-Gnome Garden Decor">
+  <h3>Astro-Gnome Garden Decor</h3>
+  <p>A garden gnome dressed as an astronaut.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 18 -->
+<div class="product-item">
+  <img src="images/galactic-pet-bed.jpg" alt="Galactic Pet Bed">
+  <h3>Galactic Pet Bed</h3>
+  <p>A comfy pet bed with a cosmic design for your furry friends.</p>
+  <p class="price">$39.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 19 -->
+<div class="product-item">
+  <img src="images/rocket-ship-backpack.jpg" alt="Rocket Ship Backpack">
+  <h3>Rocket Ship Backpack</h3>
+  <p>A fun backpack shaped like a rocket ship.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 20 -->
+<div class="product-item">
+  <img src="images/cosmic-nail-art-kit.jpg" alt="Cosmic Nail Art Kit">
+  <h3>Cosmic Nail Art Kit</h3>
+  <p>A nail art kit that allows you to create your own galaxy on your nails.</p>
+  <p class="price">$12.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 21 -->
+<div class="product-item">
+  <img src="images/cosmic-dream-catcher.jpg" alt="Cosmic Dream Catcher">
+  <h3>Cosmic Dream Catcher</h3>
+  <p>A beautifully designed dream catcher that captures cosmic vibes.</p>
+  <p class="price">$14.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 22 -->
+<div class="product-item">
+  <img src="images/galaxy-slime-kit.jpg" alt="Galaxy Slime Kit">
+  <h3>Galaxy Slime Kit</h3>
+  <p>Create your own galaxy with this fun slime kit.</p>
+  <p class="price">$99.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 22 -->
+<div class="product-item">
+  <img src="images/galaxy-slime-kit.jpg" alt="Galaxy Slime Kit">
+  <h3>Galaxy Slime Kit</h3>
+  <p>Create your own galaxy with this fun slime kit!</p>
+  <p class="price">$14.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 23 -->
+<div class="product-item">
+  <img src="images/spacetime-tea-set.jpg" alt="Spacetime Tea Set">
+  <h3>Spacetime Tea Set</h3>
+  <p>Enjoy your tea time with this cosmic-themed tea set.</p>
+  <p class="price">$49.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 24 -->
+<div class="product-item">
+  <img src="images/cosmic-throw-pillow.jpg" alt="Cosmic Throw Pillow">
+  <h3>Cosmic Throw Pillow</h3>
+  <p>Add a cosmic touch to your space with this throw pillow.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 25 -->
+<div class="product-item">
+  <img src="images/star-constellation-wall-art.jpg" alt="Star Constellation Wall Art">
+  <h3>Star Constellation Wall Art</h3>
+  <p>A beautiful wall art piece showcasing star constellations.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 26 -->
+<div class="product-item">
+  <img src="images/celestial-map-wall-art.jpg" alt="Celestial Map Wall Art">
+  <h3>Celestial Map Wall Art</h3>
+  <p>A stunning map of the night sky to inspire your dreams.</p>
+  <p class="price">$39.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 27 -->
+<div class="product-item">
+  <img src="images/space-scented-candle.jpg" alt="Space Scented Candle">
+  <h3>Space Scented Candle</h3>
+  <p>A candle that fills your space with cosmic aromas.</p>
+  <p class="price">$14.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 28 -->
+<div class="product-item">
+  <img src="images/solar-system-model.jpg" alt="Solar System Model">
+  <h3>Solar System Model</h3>
+  <p>A detailed model of the solar system for educational fun.</p>
+  <p class="price">$39.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 29 -->
+<div class="product-item">
+  <img src="images/space-cookies-cookie-cutter.jpg" alt="Space Cookies Cookie Cutter">
+  <h3>Space Cookies Cookie Cutter</h3>
+  <p>Make cookies in fun space shapes with this cookie cutter.</p>
+  <p class="price">$9.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 30 -->
+<div class="product-item">
+  <img src="images/planetarium-projector.jpg" alt="Planetarium Projector">
+  <h3>Planetarium Projector</h3>
+  <p>A projector that brings the stars into your room.</p>
+  <p class="price">$69.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 31 -->
+<div class="product-item">
+  <img src="images/cosmic-paint-set.jpg" alt="Cosmic Paint Set">
+  <h3>Cosmic Paint Set</h3>
+  <p>A paint set inspired by the colors of the universe.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 32 -->
+<div class="product-item">
+  <img src="images/space-robot-toy.jpg" alt="Space Robot Toy">
+  <h3>Space Robot Toy</h3>
+  <p>A fun toy for kids who dream of space adventures.</p>
+  <p class="price">$24.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 33 -->
+<div class="product-item">
+  <img src="images/cosmic-themed-notebook.jpg" alt="Cosmic-Themed Notebook">
+  <h3>Cosmic-Themed Notebook</h3>
+  <p>A notebook to jot down all your galactic ideas.</p>
+  <p class="price">$10.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 34 -->
+<div class="product-item">
+  <img src="images/planet-earrings.jpg" alt="Planet Earrings">
+  <h3>Planet Earrings</h3>
+  <p>Unique earrings designed to look like planets.</p>
+  <p class="price">$15.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 35 -->
+<div class="product-item">
+  <img src="images/space-animal-plush.jpg" alt="Space Animal Plush">
+  <h3>Space Animal Plush</h3>
+  <p>A soft plush toy shaped like a space creature.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 36 -->
+<div class="product-item">
+  <img src="images/galactic-honeycomb-jar.jpg" alt="Galactic Honeycomb Jar">
+  <h3>Galactic Honeycomb Jar</h3>
+  <p>A jar of cosmic honey infused with stardust.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 37 -->
+<div class="product-item">
+  <img src="images/stargazer-plant.jpg" alt="Stargazer Plant">
+  <h3>Stargazer Plant</h3>
+  <p>A beautiful plant that thrives in cosmic conditions.</p>
+  <p class="price">$14.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 38 -->
+<div class="product-item">
+  <img src="images/space-themed-backpack.jpg" alt="Space-Themed Backpack">
+  <h3>Space-Themed Backpack</h3>
+  <p>A backpack covered in a space print, perfect for school.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 39 -->
+<div class="product-item">
+  <img src="images/planetary-earrings.jpg" alt="Planetary Earrings">
+  <h3>Planetary Earrings</h3>
+  <p>Wear the universe with these stylish earrings.</p>
+  <p class="price">$15.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 40 -->
+<div class="product-item">
+  <img src="images/spacetime-tshirt.jpg" alt="Spacetime T-shirt">
+  <h3>Spacetime T-shirt</h3>
+  <p>A comfy t-shirt featuring a spacetime design.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 41 -->
+<div class="product-item">
+  <img src="images/galaxy-socks.jpg" alt="Galaxy Socks">
+  <h3>Galaxy Socks</h3>
+  <p>Keep your feet warm with these stylish galaxy socks.</p>
+  <p class="price">$8.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 42 -->
+<div class="product-item">
+  <img src="images/space-fan.jpg" alt="Space Fan">
+  <h3>Space Fan</h3>
+  <p>A portable fan with a space-themed design.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 43 -->
+<div class="product-item">
+  <img src="images/cosmic-kids-book.jpg" alt="Cosmic Kids Book">
+  <h3>Cosmic Kids Book</h3>
+  <p>A fun book for kids about space adventures.</p>
+  <p class="price">$12.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 44 -->
+<div class="product-item">
+  <img src="images/space-rocket-game.jpg" alt="Space Rocket Game">
+  <h3>Space Rocket GameHere</h3>
+  <p>A fun book for kids about space adventures.</p>
+  <p class="price">$12.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 44 -->
+<div class="product-item">
+  <img src="images/space-rocket-game.jpg" alt="Space Rocket Game">
+  <h3>Space Rocket Game</h3>
+  <p>A thrilling game where you launch rockets into space.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 45 -->
+<div class="product-item">
+  <img src="images/cosmic-puzzle.jpg" alt="Cosmic Puzzle">
+  <h3>Cosmic Puzzle</h3>
+  <p>A challenging puzzle featuring a stunning cosmic scene.</p>
+  <p class="price">$24.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 46 -->
+<div class="product-item">
+  <img src="images/space-themed-water-bottle.jpg" alt="Space-Themed Water Bottle">
+  <h3>Space-Themed Water Bottle</h3>
+  <p>Stay hydrated with this stylish space-themed water bottle.</p>
+  <p class="price">$12.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 47 -->
+<div class="product-item">
+  <img src="images/alien-plush.jpg" alt="Alien Plush">
+  <h3>Alien Plush</h3>
+  <p>A cute and cuddly plush alien toy.</p>
+  <p class="price">$19.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 48 -->
+<div class="product-item">
+  <img src="images/star-spotting-guide.jpg" alt="Star Spotting Guide">
+  <h3>Star Spotting Guide</h3>
+  <p>Your ultimate guide to identifying stars and constellations.</p>
+  <p class="price">$16.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 49 -->
+<div class="product-item">
+  <img src="images/space-jigsaw-puzzle.jpg" alt="Space Jigsaw Puzzle">
+  <h3>Space Jigsaw Puzzle</h3>
+  <p>A beautiful jigsaw puzzle depicting the wonders of space.</p>
+  <p class="price">$29.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+<!-- Product 50 -->
+<div class="product-item">
+  <img src="images/galactic-sketchbook.jpg" alt="Galactic Sketchbook">
+  <h3>Galactic Sketchbook</h3>
+  <p>Unleash your creativity in this space-themed sketchbook.</p>
+  <p class="price">$14.99</p>
+  <button class="shop-now-btn">Shop Now</button>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2024 The Galactic Traveler. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
